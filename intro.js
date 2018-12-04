@@ -1364,9 +1364,15 @@
       }
     }
 
-    if (prevTooltipButton) prevTooltipButton.setAttribute('role', 'button');
-    if (nextTooltipButton) nextTooltipButton.setAttribute('role', 'button');
-    if (skipTooltipButton) skipTooltipButton.setAttribute('role', 'button');
+    if (prevTooltipButton) {
+      prevTooltipButton.setAttribute('role', 'button');
+    }
+    if (nextTooltipButton) {
+      nextTooltipButton.setAttribute('role', 'button');
+    }
+    if (skipTooltipButton) {
+      skipTooltipButton.setAttribute('role', 'button');
+    }
 
     //Set focus on "next" button, so that hitting Enter always moves you onto the next step
     if (typeof nextTooltipButton !== "undefined" && nextTooltipButton !== null) {
